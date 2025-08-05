@@ -1,0 +1,18 @@
+{
+  "name": "nodejs_assignment",
+  "version": "1.0.0",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sahaj",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^12.9.0",
+    "qr-image": "^3.2.0"
+  },
+  "type":"module"
+}
