@@ -22,10 +22,10 @@ app.get("/",(req,res)=>{
 
 let word,hint,n1,jumbled
 
-app.get("/word", async (req, res) => {
+app.get("/word", (req, res) => {
   word = randomWords.generate()
   n1 = req.query.n1
-  await wordpos.lookup(word, (results) => {
+  wordpos.lookup(word, (results) => {
     hint = results[0].def
     res.render("index1.ejs",{word,hint,n1})
   });
